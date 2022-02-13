@@ -4,5 +4,46 @@ body {
 
 img {
   border: 1px solid red;
-  background-color: darkgreen;
+  /* background-color: darkgreen; */
+}
+
+.flex-container {
+  display: flex;
+  height: calc(100vh - 20px);
+}
+
+.header {
+  flex: 1 1 800px;
+  background: center url("../img/green-leaf-plant.jpg");
+  padding-top: 200px;
+}
+
+.header-block {
+  background-color: black;
+  opacity: 50%;
+  text-align: center;
+}
+
+.header-title {
+  display: inline;
+  color: white;
+  inherits: none;
+}
+
+.main {
+  flex: 2 1 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.form {
+  display: flex;
+  flex-wrap: wrap;
+
+}
+.footer {
+  position: absolute;
+  bottom: 5px;
+  left: 10px;
 }
