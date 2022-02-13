@@ -2,32 +2,25 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
-img {
-  border: 1px solid red;
-  /* background-color: darkgreen; */
-}
-
 .flex-container {
   display: flex;
   height: calc(100vh - 20px);
 }
 
 .header {
-  flex: 1 1 800px;
+  flex: 1 1 500px;
   background: center url("../img/green-leaf-plant.jpg");
   padding-top: 200px;
 }
 
 .header-block {
-  background-color: black;
-  opacity: 50%;
+  background-color: rgba(0, 0, 0, 0.5);
   text-align: center;
 }
 
 .header-title {
   display: inline;
   color: white;
-  inherits: none;
 }
 
 .main {
@@ -35,13 +28,29 @@ img {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  padding-left: 24px;
 }
 
 .form {
   display: flex;
-  flex-wrap: wrap;
-
+  flex-direction: column;
 }
+
+.form-header {
+  margin-left: 48px;
+}
+
+.form-row {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 16px;
+}
+
+.form-element {
+  margin-left: 48px;
+}
+
+
 .footer {
   position: absolute;
   bottom: 5px;
