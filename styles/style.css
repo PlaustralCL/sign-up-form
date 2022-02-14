@@ -48,7 +48,7 @@ body {
 .section3 {
   background-color: #F9FAFB;
   height: calc((100vh / 3) + 50px);
-  padding-left: 32px;
+  padding-left: 40px;
 }
 
 .section1 p,
@@ -80,13 +80,17 @@ body {
   font-size: 1rem;
 }
 
+.section2 {
+  padding-left: 40px;
+}
+
 .form {
   display: flex;
   flex-direction: column;
+
 }
 
 .form-header {
-  margin-left: 32px;
   font-size: 1.2rem;
 }
 
@@ -97,7 +101,28 @@ body {
 }
 
 .form-element {
-  margin-left: 32px;
+  margin-right: 80px;
+}
+
+.form label {
+  font-size: 12px;
+}
+
+.form input {
+  border: 1px solid #E5E7EB;
+  padding: 6px;
+  font-size: 14px;
+  width: 240px;
+}
+
+.form input:focus {
+  box-shadow: 13px 15px 16px -10px #DBDBDB;
+  border: 4px solid #9CB1ED;
+
+}
+
+.form input:invalid {
+  border-color: #C64646;
 }
 
 .button {
