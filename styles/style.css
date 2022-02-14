@@ -4,23 +4,32 @@ body {
 
 .flex-container {
   display: flex;
-  height: calc(100vh - 20px);
+  /* height: calc(100vh - 20px); */
+  height: 100vh;
 }
 
 .header {
-  flex: 1 1 500px;
+  flex: 0 1 500px;
   background: center url("../img/green-leaf-plant.jpg");
-  padding-top: 200px;
+  padding-top: 180px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .header-block {
   background-color: rgba(0, 0, 0, 0.5);
   text-align: center;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .header-title {
   display: inline;
   color: white;
+  font-size: 56px;
 }
 
 .main {
@@ -28,7 +37,26 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding-left: 24px;
+}
+
+.section1,
+.section3 {
+  background-color: #F9FAFB;
+  height: calc(100vh / 3);
+  padding-left: 32px;
+}
+
+.section1 p,
+.section3 p {
+  font-size: 1.5rem;
+  max-width: 50ch;
+  font-weight: bold;
+}
+
+.section1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .form {
@@ -37,7 +65,7 @@ body {
 }
 
 .form-header {
-  margin-left: 48px;
+  margin-left: 32px;
 }
 
 .form-row {
@@ -47,12 +75,26 @@ body {
 }
 
 .form-element {
-  margin-left: 48px;
+  margin-left: 32px;
 }
 
+.button {
+  height: 40px;
+  width: 200px;
+  background-color: #596D48;
+  color: white;
+  font-size: 1.2rem;
+  border-radius: 8px;
+}
 
-.footer {
-  position: absolute;
-  bottom: 5px;
-  left: 10px;
+.credit {
+  color: white;
+  font-size: 12px;
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+.credit a {
+  color: white;
+  font-size: 12px;
 }
