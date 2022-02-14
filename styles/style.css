@@ -9,14 +9,13 @@ body {
 
 .flex-container {
   display: flex;
-  /* height: calc(100vh - 20px); */
   height: 100vh;
 }
 
 .header {
   flex: 0 1 500px;
   background: center url("../img/green-leaf-plant.jpg");
-  padding-top: 180px;
+  padding-top: 190px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -34,7 +33,7 @@ body {
 .header-title {
   display: inline;
   color: white;
-  font-size: 96px;
+  font-size: 88px;
   font-family: NorseBold, sans-serif;
 }
 
@@ -48,21 +47,37 @@ body {
 .section1,
 .section3 {
   background-color: #F9FAFB;
-  height: calc(100vh / 3);
+  height: calc((100vh / 3) + 50px);
   padding-left: 32px;
 }
 
 .section1 p,
 .section3 p {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   max-width: 50ch;
   font-weight: bold;
+  line-height: 1.1;
 }
 
 .section1 {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  padding-top: 100px;
+}
+
+.section3 {
+  padding-top: 40px;
+}
+
+.section3 p {
+  font-size: 1rem;
+}
+
+.section3 a {
+  color: #596D48;
+  text-decoration: none;
+  font-size: 1rem;
 }
 
 .form {
@@ -72,6 +87,7 @@ body {
 
 .form-header {
   margin-left: 32px;
+  font-size: 1.2rem;
 }
 
 .form-row {
@@ -93,14 +109,14 @@ body {
   border-radius: 8px;
 }
 
-.credit {
+.attribution{
   color: white;
   font-size: 12px;
   text-align: center;
   padding-bottom: 10px;
 }
 
-.credit a {
+.attribution a {
   color: white;
   font-size: 12px;
 }
