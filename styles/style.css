@@ -2,6 +2,11 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
+@font-face {
+  font-family: NorseBold;
+  src: url("../fonts/Norse-Bold.otf")
+}
+
 .flex-container {
   display: flex;
   /* height: calc(100vh - 20px); */
@@ -29,7 +34,8 @@ body {
 .header-title {
   display: inline;
   color: white;
-  font-size: 56px;
+  font-size: 96px;
+  font-family: NorseBold, sans-serif;
 }
 
 .main {
