@@ -120,11 +120,17 @@ body {
 .form input:focus {
   box-shadow: 13px 15px 16px -10px #DBDBDB;
   border: 2px solid #9CB1ED;
-
 }
 
 .form input:invalid {
   border-color: #C64646;
+}
+
+.help {
+  font-size: 10px;
+  color: #C64646;
+  font-weight: bold;
+  margin-top: 0;
 }
 
 .button {
@@ -134,6 +140,12 @@ body {
   color: white;
   font-size: 1.2rem;
   border-radius: 8px;
+  border: none;
+  outline: none;
+}
+
+.button:hover {
+  background-color: #6f8a5c;
 }
 
 .attribution{
@@ -143,7 +155,11 @@ body {
   padding-bottom: 10px;
 }
 
-.attribution a {
+.link {
   color: white;
   font-size: 12px;
+}
+
+.link:hover {
+  text-decoration: underline;
 }
