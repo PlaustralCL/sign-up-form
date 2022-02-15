@@ -13,34 +13,34 @@ body {
 }
 
 .header {
-  flex: 0 1 500px;
   background: center url("../img/green-leaf-plant.jpg");
-  padding-top: 190px;
   display: flex;
   flex-direction: column;
+  flex: 0 1 500px;
   justify-content: space-between;
+  padding-top: 190px;
 }
 
 .header-block {
-  background-color: rgba(0, 0, 0, 0.5);
-  text-align: center;
-  height: 150px;
-  display: flex;
-  justify-content: center;
   align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  height: 150px;
+  justify-content: center;
+  text-align: center;
 }
 
 .header-title {
-  display: inline;
   color: white;
-  font-size: 88px;
+  display: inline;
   font-family: NorseBold, sans-serif;
+  font-size: 88px;
 }
 
 .main {
-  flex: 2 1 auto;
   display: flex;
   flex-direction: column;
+  flex: 2 1 auto;
   justify-content: space-between;
 }
 
@@ -51,12 +51,11 @@ body {
   padding-left: 40px;
 }
 
-.section1 p,
-.section3 p {
+.text {
   font-size: 1.3rem;
-  max-width: 50ch;
   font-weight: bold;
   line-height: 1.1;
+  max-width: 50ch;
 }
 
 .section1 {
@@ -76,8 +75,8 @@ body {
 
 .link {
   color: #596D48;
-  text-decoration: none;
   font-size: 1rem;
+  text-decoration: none;
 }
 
 .link:hover {
@@ -112,17 +111,17 @@ body {
 }
 
 .input {
-  border: 1px solid #E5E7EB;
-  padding: 6px;
-  font-size: 14px;
-  width: 240px;
-  outline: none;
   border-radius: 4px;
+  border: 1px solid #E5E7EB;
+  font-size: 14px;
+  outline: none;
+  padding: 6px;
+  width: 240px;
 }
 
 .input:focus {
-  box-shadow: 13px 15px 16px -10px #DBDBDB;
   border: 2px solid #9CB1ED;
+  box-shadow: 13px 15px 16px -10px #DBDBDB;
 }
 
 .input:invalid {
@@ -154,11 +153,42 @@ body {
 .attribution{
   color: white;
   font-size: 12px;
-  text-align: center;
   padding-bottom: 10px;
+  text-align: center;
 }
 
 .attribution-link {
   color: white;
   font-size: 12px;
+}
+
+@media only screen and (max-width: 900px) {
+  .flex-container {
+    flex-direction: column;
+  }
+
+  .header {
+    padding-top: 10px;
+  }
+
+  .form-row {
+    flex-direction: column;
+  }
+
+  .section1,
+  .section2,
+  .section3 {
+    height: auto;
+    justify-content: flex-start;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .section1 {
+    padding-top: 1rem;
+  }
+
+  .text {
+    margin: 1rem 0;
+  }
 }
