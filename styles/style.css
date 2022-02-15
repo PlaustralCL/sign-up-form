@@ -74,10 +74,14 @@ body {
   font-size: 1rem;
 }
 
-.section3 a {
+.link {
   color: #596D48;
   text-decoration: none;
   font-size: 1rem;
+}
+
+.link:hover {
+  text-decoration: underline;
 }
 
 .section2 {
@@ -87,7 +91,6 @@ body {
 .form {
   display: flex;
   flex-direction: column;
-
 }
 
 .form-header {
@@ -104,11 +107,11 @@ body {
   margin-right: 80px;
 }
 
-.form label {
+.label {
   font-size: 12px;
 }
 
-.form input {
+.input {
   border: 1px solid #E5E7EB;
   padding: 6px;
   font-size: 14px;
@@ -117,31 +120,31 @@ body {
   border-radius: 4px;
 }
 
-.form input:focus {
+.input:focus {
   box-shadow: 13px 15px 16px -10px #DBDBDB;
   border: 2px solid #9CB1ED;
 }
 
-.form input:invalid {
+.input:invalid {
   border-color: #C64646;
 }
 
 .help {
-  font-size: 10px;
   color: #C64646;
+  font-size: 10px;
   font-weight: bold;
   margin-top: 0;
 }
 
 .button {
-  height: 40px;
-  width: 200px;
   background-color: #596D48;
-  color: white;
-  font-size: 1.2rem;
   border-radius: 8px;
   border: none;
+  color: white;
+  font-size: 1.2rem;
+  height: 40px;
   outline: none;
+  width: 200px;
 }
 
 .button:hover {
@@ -155,11 +158,7 @@ body {
   padding-bottom: 10px;
 }
 
-.link {
+.attribution-link {
   color: white;
   font-size: 12px;
-}
-
-.link:hover {
-  text-decoration: underline;
 }
